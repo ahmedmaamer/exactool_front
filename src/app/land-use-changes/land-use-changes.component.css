@@ -1,0 +1,80 @@
+.nav-pills.agriculture-pills .nav-link {
+    background-color: #F2F2F2;
+    border: 1px solid #BFBFBF;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-pills.agriculture-pills .nav-link.active, 
+  .nav-pills.agriculture-pills .nav-link:hover {
+    background-color: #2C6A31;
+    color: #FFFFFF;
+    border-color: #2C6A31;
+  }
+  table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: #87CEFA;
+  color: white;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+input[type="text"], select {
+  padding: 6px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+input[type="date"] {
+  padding: 6px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+button {
+  background-color: #314707;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Reduce the space between rows */
+.row {
+  margin-bottom: -10px; /* You can adjust this value to control spacing */
+}
+
+
+
+
+

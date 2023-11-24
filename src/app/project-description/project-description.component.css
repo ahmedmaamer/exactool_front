@@ -1,0 +1,36 @@
+/* Custom colors for agriculture-related pills navigation */
+.agriculture-pills .nav-link {
+  color: #fff;
+  background-color: #32a852;
+  border-color: #32a852;
+}
+
+.agriculture-pills .nav-link.active {
+  background-color: #2a984a;
+  border-color: #2a984a;
+}
+
+.agriculture-pills .nav-link:hover {
+  background-color: #2a984a;
+}
+
+.agriculture-pills .nav-link.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Custom styling for agriculture-related tab content */
+.agriculture-content {
+  padding: 15px;
+  border: 1px solid #2a984a;
+  border-top: none;
+  background-color: #f9f9f9;
+}
+
+.agriculture-content .tab-pane {
+  display: none;
+}
+
+.agriculture-content .tab-pane.active {
+  display: block;
+}

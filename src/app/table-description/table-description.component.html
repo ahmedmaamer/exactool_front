@@ -1,0 +1,363 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header">
+            <div class="d-flex justify-content-between">
+              <h4 class="card-title">1 - DESCRIPTION</h4>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                id="btn-secondary"
+              >
+                ?
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Guide Photos</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <h4 class="card-title">CLIMATE</h4>
+                  <div class="col">
+                    <img src="/assets/img/climat.PNG" alt="Climat 1" />
+                  </div>
+                  <div class="col">
+                    <img src="/assets/img/climat2.PNG" alt="Climat 2" />
+                  </div>
+                  <div class="col">
+                    <img src="/assets/img/climat3.PNG" alt="Climat 3" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="form" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header card-header-success">
+                  <h4 class="card-title">1.1 - Project Description</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td>User Name</td>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control"
+                              [(ngModel)]="projectDescription.userName"
+                            />
+                          </td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                          <td>Project name</td>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control"
+                              [(ngModel)]="
+                                projectDto.projectDescription.projectName
+                              "
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Project code</td>
+                          <td>
+                            <input
+                              type="number"
+                              class="form-control"
+                              [(ngModel)]="
+                                projectDto.projectDescription.projectCode
+                              "
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Project cost (in USD)</td>
+                          <td>
+                            <input
+                              type="number"
+                              class="form-control"
+                              [(ngModel)]="
+                                projectDto.projectDescription.projectCost
+                              "
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Funding agency</td>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control"
+                              [(ngModel)]="
+                                projectDto.projectDescription.fundingAgency
+                              "
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Executing agency</td>
+                          <td>
+                            <input
+                              type="text"
+                              class="form-control"
+                              [(ngModel)]="
+                                projectDto.projectDescription.executingAgency
+                              "
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Project status</td>
+                          <td>
+                            <select
+                              class="form-control"
+                              [(ngModel)]="
+                                projectDto.projectDescription.projectStatus
+                              "
+                            >
+                              <option>Completed</option>
+                              <option>In_progress</option>
+                              <option>On_hold</option>
+                              <option>Cancelled</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header card-header-success">
+                  <h4 class="card-title">1.2 - Project site & duration</h4>
+                </div>
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>Continent</td>
+                      <td>
+                        <select
+                          type="text"
+                          class="form-control"
+                          [(ngModel)]="projectDto.projectDescription.continent"
+                        >
+                          <option>AFRICA</option>
+                          <option>ASIA</option>
+                          <option>EUROPE</option>
+                          <option>Temperate</option>
+                          <option>NORTH_AMERICA</option>
+                          <option>SOUTH_AMERICA</option>
+                          <option>AUSTRALIA</option>
+                          <option>ANTARCTICA</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Country</td>
+                      <td>
+                        <select
+                          type="text"
+                          class="form-control"
+                          [(ngModel)]="projectDto.projectDescription.country"
+                        >
+                          <option>Tropical</option>
+                          <option>Temperate</option>
+                          <option>Cold</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Climate</td>
+                      <td>
+                        <select
+                          type="text"
+                          class="form-control"
+                          [(ngModel)]="projectDto.projectDescription.climate"
+                        >
+                          <option>Tropical</option>
+                          <option>Temperate</option>
+                          <option>Cold</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Moisture</td>
+                      <td>
+                        <select
+                          type="text"
+                          class="form-control"
+                          [(ngModel)]="projectDto.projectDescription.moisture"
+                        >
+                          <option>Wet</option>
+                          <option>Moderate</option>
+                          <option>Dry</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Soil type</td>
+                      <td>
+                        <select
+                          type="text"
+                          class="form-control"
+                          [(ngModel)]="projectDto.projectDescription.soilType"
+                        >
+                          <option>Sandy</option>
+                          <option>Loam</option>
+                          <option>Clay</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Project duration</td>
+                      <td>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Implementation phase"
+                          [(ngModel)]="
+                            projectDto.projectDescription.implementationPhase
+                          "
+                        />
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Capitalization phase"
+                          [(ngModel)]="
+                            projectDto.projectDescription.capitalizationPhase
+                          "
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Total duration of accounting</td>
+                      <td>
+                        <input
+                          type="text"
+                          class="form-control"
+                          [(ngModel)]="
+                            projectDto.projectDescription
+                              .totalDurationOfAccounting
+                          "
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Save</button>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header card-header-success">
+              <h4 class="card-title">1.3 - Global Warming Potential</h4>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>Source</td>
+                      <td>
+                        <select
+                          class="form-control"
+                          [(ngModel)]="selectedSource"
+                          (change)="updateResults()"
+                        >
+                          <option>100yr SAR</option>
+                          <option>100yr AR4</option>
+                          <option>100yr AR5 with CC feedback</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>CO<sub>2</sub></td>
+                      <td>{{ co2Result }}</td>
+                    </tr>
+                    <tr>
+                      <td>CH<sub>4</sub></td>
+                      <td>{{ ch4Result }}</td>
+                    </tr>
+                    <tr>
+                      <td>N<sub>2</sub>O</td>
+                      <td>{{ n2oResult }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header card-header-success">
+              <h4 class="card-title">
+                1.4 - Reference Soil Organic Carbon Stock
+              </h4>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class="text-agriculture">
+                    <tr>
+                      <th></th>
+                      <th>tC/ha default</th>
+                      <th>Tier2</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>SOCref</td>
+                      <td>Output</td>
+                      <td>Output</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

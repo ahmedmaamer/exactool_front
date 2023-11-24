@@ -1,0 +1,69 @@
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Arial", sans-serif;
+    color: #006400;
+  }
+  .text-container {
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  
+  /* Paragraph styles */
+  p {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+  }
+  
+  /* Link styles */
+  a {
+    color: #006400;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button styles */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006400;
+    color: #ffffff;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #228B22;
+  }
+  
+  /* Table styles */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  th {
+    background-color: #006400;
+    color: #ffffff;
+  }
+  
+  /* Image styles */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
